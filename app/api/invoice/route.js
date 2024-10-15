@@ -55,8 +55,8 @@ export async function POST(req) {
     // Ajuster les positions des colonnes
     doc.text("Description", 12, tableStartY + 6); // Colonne Description
     doc.text("Qty", 60, tableStartY + 6);        // Colonne Quantity (réduite)
-    doc.text("Price (CFA)", 90, tableStartY + 6); // Colonne Price
-    doc.text("Total (CFA)", 120, tableStartY + 6); // Colonne Total (avec plus d'espace)
+    doc.text("Price (CFA)", 78, tableStartY + 6); // Colonne Price
+    doc.text("Total (CFA)", 110, tableStartY + 6); // Colonne Total (avec plus d'espace)
 
     // Dessiner une ligne sous les en-têtes
     doc.setDrawColor(200, 200, 200);
@@ -72,9 +72,9 @@ export async function POST(req) {
       const yPosition = tableStartY + rowHeight * (index + 2);
       doc.setTextColor(0, 0, 0); // Couleur du texte pour les articles
       doc.text(description, 12, yPosition);
-      doc.text(quantity.toString(), 75, yPosition);
-      doc.text(`${price.toFixed(2)} CFA`, 95, yPosition);
-      doc.text(`${itemTotal.toFixed(2)} CFA`, 120, yPosition); // Espacement ajusté
+      doc.text(quantity.toString(), 60, yPosition);
+      doc.text(`${price.toFixed(2)} CFA`, 78, yPosition);
+      doc.text(`${itemTotal.toFixed(2)} CFA`, 110, yPosition); // Espacement ajusté
     });
 
     // Ajouter le total
