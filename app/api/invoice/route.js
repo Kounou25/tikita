@@ -34,9 +34,10 @@ export async function POST(req) {
     doc.text("Reçu", 15, 30);
 
     // Informations sur le client
+    doc.setFont("helvetica", "normal");
     doc.setFontSize(12);
     doc.setTextColor(0, 0, 0); // Couleur du texte
-    doc.text(`Reçu pour: ${customer}`, 15, 45);
+    doc.text(`Reçu de: ${customer}`, 15, 45);
     doc.text(`Email: ${email}`, 15, 52);
 
     // Dessiner une ligne de séparation
