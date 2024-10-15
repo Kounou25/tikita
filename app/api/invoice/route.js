@@ -54,8 +54,8 @@ export async function POST(req) {
 
     // Ajuster les positions des colonnes
     doc.text("Description", 12, tableStartY + 6); // Colonne Description
-    doc.text("Qty", 75, tableStartY + 6);        // Colonne Quantity (réduite)
-    doc.text("Price (CFA)", 95, tableStartY + 6); // Colonne Price
+    doc.text("Qty", 60, tableStartY + 6);        // Colonne Quantity (réduite)
+    doc.text("Price (CFA)", 90, tableStartY + 6); // Colonne Price
     doc.text("Total (CFA)", 120, tableStartY + 6); // Colonne Total (avec plus d'espace)
 
     // Dessiner une ligne sous les en-têtes
