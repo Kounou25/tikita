@@ -82,7 +82,7 @@ export default function Home() {
         ))}
 
         <button className="add-item-btn" type="button" onClick={addItem}>ajouter a la facture</button>
-        <button className="submit-btn" type="submit">Generer le recu</button>
+        <button className="submit-btn" type="submit">Generer le recu</button><br></br>
       </form>
 
       
