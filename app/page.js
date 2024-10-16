@@ -19,7 +19,7 @@ export default function Home() {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'cakes-by-rk.pdf';
+    a.download = `cakes-by-rk recu ${customer}`;
     a.click();
   };
 
@@ -39,8 +39,8 @@ export default function Home() {
           required
         />
         <input
-          type="email"
-          placeholder="Email du client"
+          type="number"
+          placeholder="Numero de telephone"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required

@@ -38,7 +38,7 @@ export async function POST(req) {
     doc.setFontSize(12);
     doc.setTextColor(0, 0, 0); // Couleur du texte
     doc.text(`Reçu de: ${customer}`, 15, 45);
-    doc.text(`Email: ${email}`, 15, 52);
+    doc.text(`Numero de tel: ${email}`, 15, 52);
 
     // Dessiner une ligne de séparation
     doc.setDrawColor(0, 102, 204); // Couleur de la ligne
@@ -92,7 +92,7 @@ export async function POST(req) {
     doc.setFontSize(10);
     doc.setFont("helvetica", "italic");
     doc.setTextColor(150, 150, 150); // Gris clair pour le message
-    doc.text("Merci pour votre confiance!\ncake by rk la meilleur !", 75, totalYPosition + 25, { align: "center" });
+    doc.text("Merci pour votre confiance!\ncake by rk la meilleur !\n 00227 84 61 53 53", 75, totalYPosition + 25, { align: "center" });
 
     // Ajouter la date et l'heure d'émission du reçu en bas à droite
     const date = new Date().toLocaleDateString('fr-FR'); // Format de date français
