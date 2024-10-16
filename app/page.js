@@ -85,7 +85,7 @@ export default function Home() {
         <button className="submit-btn" type="submit">Generer le recu</button>
       </form>
 
-      <h4 className='footer'>Generateur de recu creer avec ❤️ </h4>
+      
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
@@ -182,6 +182,9 @@ export default function Home() {
           }
         }
       `}</style>
+
+<h4 className='footer'>Generateur de recu creer avec ❤️ </h4>
     </div>
+    
   );
 }
