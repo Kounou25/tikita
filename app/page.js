@@ -109,10 +109,9 @@ export default function Home() {
         }
 
         footer {
-          color: white;
+          
           text-align : center;
-          position : relative;
-          left: 30px;
+         
         }
 
         input {
