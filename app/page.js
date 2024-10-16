@@ -82,15 +82,15 @@ export default function Home() {
 
          
         ))}
-        <footer>
-        <h4 className='footer'>Application creer avec ❤️ par <a href="#">kounou gilbert</a> </h4>
-
-        </footer>
+        
         <button className="add-item-btn" type="button" onClick={addItem}>ajouter a la facture</button>
         <button className="submit-btn" type="submit">Generer le recu</button>
       </form>
 
-      
+      <footer>
+        <h4 className='footer'>Application creer avec ❤️ par <a href="#">kounou gilbert</a> </h4>
+
+        </footer>
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
