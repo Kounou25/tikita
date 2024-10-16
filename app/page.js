@@ -186,6 +186,12 @@ export default function Home() {
 
 <h4 className='footer'>Generateur de recu creer avec ❤️ par <a href="#">kounou gilbert</a> jhgjkj</h4>
     </div>
+
     
   );
+
+  <div>
+    <h4 className='footer'>Generateur de recu creer avec ❤️ par <a href="#">kounou gilbert</a> jhgjkj</h4>
+
+  </div>
 }
