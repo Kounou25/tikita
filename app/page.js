@@ -110,6 +110,7 @@ export default function Home() {
 
         footer{
           color: white;
+          postion : center;
         }
 
         input {
@@ -183,7 +184,7 @@ export default function Home() {
         }
       `}</style>
 
-<h4 className='footer'>Generateur de recu creer avec ❤️ </h4>
+<h4 className='footer'>Generateur de recu creer avec ❤️ par <a href="#">kounou gilbert</a> </h4>
     </div>
     
   );
