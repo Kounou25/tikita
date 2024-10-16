@@ -79,8 +79,13 @@ export default function Home() {
               }}
             />
           </div>
-        ))}
 
+         
+        ))}
+        <footer>
+        <h4 className='footer'>Application creer avec ❤️ par <a href="#">kounou gilbert</a> </h4>
+
+        </footer>
         <button className="add-item-btn" type="button" onClick={addItem}>ajouter a la facture</button>
         <button className="submit-btn" type="submit">Generer le recu</button>
       </form>
@@ -186,7 +191,6 @@ export default function Home() {
         }
       `}</style>
 
-<h4 className='footer'>Application creer avec ❤️ par <a href="#">kounou gilbert</a> </h4>
     </div>
 
     
