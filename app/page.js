@@ -108,9 +108,11 @@ export default function Home() {
           font-weight: 600;
         }
 
-        footer{
+        footer {
           color: white;
           text-align : center;
+          position : relative;
+          left: 30px;
         }
 
         input {
