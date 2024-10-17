@@ -96,7 +96,7 @@ export async function POST(req) {
 
     // Ajouter la date et l'heure d'émission du reçu en bas à droite
     const date = new Date().toLocaleDateString('fr-FR'); // Format de date français
-    const time = new Date().toLocaleTimeString('fr-FR'); // Heure au format français
+    const time = new Date().toLocaleTimeString('fr-FR', { timeZone: 'Africa/Niamey' }); // Heure au fuseau 'Africa/Niamey'
     doc.setFontSize(10);
     doc.setTextColor(0, 0, 0); // Couleur du texte
     doc.text(`Date: ${date}`, 135, totalYPosition + 30, { align: "right" });
