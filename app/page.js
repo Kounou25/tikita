@@ -28,64 +28,73 @@ export default function Home() {
   };
 
   return (
-    <div className="form-container">
-      <h1>Generateur de recu by RK</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Nom du client"
-          value={customer}
-          onChange={(e) => setCustomer(e.target.value)}
-          required
-        />
-        <input
-          type="number"
-          placeholder="Numero de telephone"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+    <>
+      <div className="form-container">
+        <h1>Generateur de recu by RK</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Nom du client"
+            value={customer}
+            onChange={(e) => setCustomer(e.target.value)}
+            required
+          />
+          <input
+            type="number"
+            placeholder="Numero de telephone"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
 
-        {items.map((item, index) => (
-          <div className="item" key={index}>
-            <input
-              type="text"
-              placeholder=" description"
-              value={item.description}
-              onChange={(e) => {
-                const newItems = [...items];
-                newItems[index].description = e.target.value;
-                setItems(newItems);
-              }}
-            />
-            <input
-              type="number"
-              placeholder="Quantite"
-              value={item.quantity}
-              onChange={(e) => {
-                const newItems = [...items];
-                newItems[index].quantity = e.target.value;
-                setItems(newItems);
-              }}
-            />
-            <input
-              type="number"
-              placeholder="prix"
-              value={item.price}
-              onChange={(e) => {
-                const newItems = [...items];
-                newItems[index].price = e.target.value;
-                setItems(newItems);
-              }}
-            />
-          </div>
-        ))}
+          {items.map((item, index) => (
+            <div className="item" key={index}>
+              <input
+                type="text"
+                placeholder=" description"
+                value={item.description}
+                onChange={(e) => {
+                  const newItems = [...items];
+                  newItems[index].description = e.target.value;
+                  setItems(newItems);
+                }}
+              />
+              <input
+                type="number"
+                placeholder="Quantite"
+                value={item.quantity}
+                onChange={(e) => {
+                  const newItems = [...items];
+                  newItems[index].quantity = e.target.value;
+                  setItems(newItems);
+                }}
+              />
+              <input
+                type="number"
+                placeholder="prix"
+                value={item.price}
+                onChange={(e) => {
+                  const newItems = [...items];
+                  newItems[index].price = e.target.value;
+                  setItems(newItems);
+                }}
+              />
+            </div>
+          ))}
 
-        <button className="add-item-btn" type="button" onClick={addItem}>ajouter a la facture</button>
-        <button className="submit-btn" type="submit">Generer le recu</button><br></br>
-      </form>
+          <button className="add-item-btn" type="button" onClick={addItem}>
+            ajouter a la facture
+          </button>
+          <button className="submit-btn" type="submit">
+            Generer le recu
+          </button>
+        </form>
+      </div>
 
-      
+      <footer>
+        <p>Crédit: Application développée par <strong>RK</strong></p>
+        <p>Créée avec ❤️ par <a href="#">Kounou Gilbert</a></p>
+      </footer>
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
@@ -94,11 +103,11 @@ export default function Home() {
           max-width: 600px;
           margin: 60px auto;
           padding: 30px;
-          background: white; /* Changement ici, fond blanc */
+          background: white;
           border-radius: 16px;
           box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
           font-family: 'Inter', sans-serif;
-          color: black; /* Texte en noir */
+          color: black;
         }
 
         h1 {
@@ -108,12 +117,6 @@ export default function Home() {
           font-weight: 600;
         }
 
-        footer {
-          
-          text-align : center;
-         
-        }
-
         input {
           width: 100%;
           padding: 14px;
@@ -121,7 +124,7 @@ export default function Home() {
           border: 1px solid #ccc;
           border-radius: 8px;
           font-size: 1rem;
-          background: rgba(0, 0, 0, 0.05); /* Léger gris pour les inputs */
+          background: rgba(0, 0, 0, 0.05);
           color: black;
           transition: background 0.3s ease, box-shadow 0.3s ease;
         }
@@ -174,6 +177,22 @@ export default function Home() {
           background-color: #1e88e5;
         }
 
+        footer {
+          text-align: center;
+          padding: 20px;
+          background-color: #f5f5f5;
+          margin-top: 40px;
+        }
+
+        footer p {
+          margin: 0;
+        }
+
+        footer a {
+          color: #2196f3;
+          text-decoration: none;
+        }
+
         @media (max-width: 600px) {
           .item {
             flex-direction: column;
@@ -184,12 +203,6 @@ export default function Home() {
           }
         }
       `}</style>
-
-<h4 className='footer'>Application creer avec ❤️ par <a href="#">kounou gilbert</a> </h4>
-    </div>
-
-    
+    </>
   );
-
-  
 }
