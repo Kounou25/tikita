@@ -92,7 +92,7 @@ export async function POST(req) {
     doc.setFontSize(10);
     doc.setFont("helvetica", "italic");
     doc.setTextColor(150, 150, 150); // Gris clair pour le message
-    doc.text("Merci pour votre confiance!\ncakes by rk la meilleur !\n 00227 84 61 53 53", 75, totalYPosition + 25, { align: "center" });
+    doc.text("Merci pour votre confiance!\ncakes by rk la meilleure !\n 00227 84 61 53 53", 75, totalYPosition + 25, { align: "center" });
 
     // Ajouter la date et l'heure d'émission du reçu en bas à droite
     const date = new Date().toLocaleDateString('fr-FR'); // Format de date français
