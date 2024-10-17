@@ -180,7 +180,7 @@ export default function Home() {
         footer {
           text-align: center;
           padding: 20px;
-          background-color: #f5f5f5;
+          color : white;
           margin-top: 40px;
         }
 
