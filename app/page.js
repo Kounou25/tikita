@@ -19,7 +19,7 @@ export default function Home() {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `Tikita-pro recu ${customer}`;
+    a.download = `Likita-pro recu ${customer}`;
     a.click();
   };
 
@@ -93,7 +93,7 @@ export default function Home() {
 
       <footer>
         <p><strong>TIKITA PRO V1</strong></p>
-        <p>Créée avec ❤️ par <a href="https://wa.me/88715276">Kounou Gilbert</a></p>
+        <p>Créée avec ❤️ par <a href="wa.me/88715276">Kounou Gilbert</a></p>
       </footer>
 
       <style jsx>{`
