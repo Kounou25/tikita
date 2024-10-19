@@ -41,7 +41,7 @@ export async function POST(req) {
     doc.text(`Numero de tel: ${email}`, 15, 52);
 
     // Dessiner une ligne de séparation
-    doc.setDrawColor(0, 102, 204); // Couleur de la ligne
+    doc.setDrawColor(128, 0, 128); // Couleur de la ligne
     doc.line(10, 58, 140, 58); // Ligne ajustée
 
     // Ajouter les en-têtes du tableau
@@ -60,7 +60,7 @@ export async function POST(req) {
     doc.text("Total (CFA)", 110, tableStartY + 6); // Colonne Total (avec plus d'espace)
 
     // Dessiner une ligne sous les en-têtes
-    doc.setDrawColor(200, 200, 200);
+    doc.setDrawColor(128, 0, 128);
     doc.line(10, tableStartY + rowHeight, 140, tableStartY + rowHeight); // Ligne ajustée
 
     // Ajouter les articles
@@ -80,19 +80,19 @@ export async function POST(req) {
 
     // Ajouter le total
     const totalYPosition = tableStartY + rowHeight * (items.length + 2);
-    doc.setFontSize(12);
+    doc.setFontSize(14);
     doc.setTextColor(128, 0, 128); // Couleur du total
     doc.text(`Total: ${total.toFixed(2)} CFA`, 12, totalYPosition + 10);
 
     //Ajouter une ligne sous le total
-    doc.setDrawColor(0, 122, 204);
+    doc.setDrawColor(128, 0, 128);
     doc.line(10, totalYPosition + 15, 140, totalYPosition + 15);
 
     // Ajouter un message de remerciement centré en bas
     doc.setFontSize(10);
     doc.setFont("helvetica", "italic");
     doc.setTextColor(150, 150, 150); // Gris clair pour le message
-    doc.text("Biller pro\n Logiciel en ligne de generation de recu \n contact:00227 88715276", 75, totalYPosition + 25, { align: "center" });
+    doc.text("\n\n\n\n\n\nTIKITA PRO V1\n Logiciel en ligne de generation de recu \n contact:00227 88715276", 75, totalYPosition + 25, { align: "center" });
 
     // Ajouter la date et l'heure d'émission du reçu en bas à droite
     const date = new Date().toLocaleDateString('fr-FR'); // Format de date français
