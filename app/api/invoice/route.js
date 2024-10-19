@@ -49,8 +49,8 @@ export async function POST(req) {
     const rowHeight = 8;
 
     doc.setFontSize(10);
-    doc.setTextColor(128, 0, 128); // Couleur du texte
-    doc.setFillColor(0, 102, 204); // Couleur de fond pour les en-têtes
+    doc.setTextColor(255, 255, 255); // Couleur du texte
+    doc.setFillColor(128, 0, 128); // Couleur de fond pour les en-têtes
     doc.rect(10, tableStartY, 130, rowHeight, 'F'); // Fond pour les en-têtes
 
     // Ajuster les positions des colonnes
