@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { jsPDF } from 'jspdf';
 import fs from 'fs';
-import path from 'path';
+//import path from 'path';
 import { Buffer } from 'buffer';
 
 // Fonction pour convertir une image en base64 depuis le système de fichiers
