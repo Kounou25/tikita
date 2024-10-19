@@ -19,7 +19,7 @@ export default function Home() {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `cakes-by-rk recu ${customer}`;
+    a.download = `Likita-pro recu ${customer}`;
     a.click();
   };
 
@@ -92,7 +92,7 @@ export default function Home() {
       </div>
 
       <footer>
-        <p>Crédit: Application développée par <strong>RK</strong></p>
+        <p><strong>TIKITA PRO V1</strong></p>
         <p>Créée avec ❤️ par <a href="#">Kounou Gilbert</a></p>
       </footer>
 
