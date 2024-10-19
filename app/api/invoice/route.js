@@ -92,7 +92,7 @@ export async function POST(req) {
     doc.setFontSize(10);
     doc.setFont("helvetica", "italic");
     doc.setTextColor(150, 150, 150); // Gris clair pour le message
-    doc.text("Biller : Logiciel en ligne de generation de recu \n contact:00227 88715276", 75, totalYPosition + 25, { align: "center" });
+    doc.text("Biller pro\n Logiciel en ligne de generation de recu \n contact:00227 88715276", 75, totalYPosition + 25, { align: "center" });
 
     // Ajouter la date et l'heure d'émission du reçu en bas à droite
     const date = new Date().toLocaleDateString('fr-FR'); // Format de date français
