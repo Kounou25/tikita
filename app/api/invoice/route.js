@@ -30,7 +30,7 @@ export async function POST(req) {
     // Définir des styles
     doc.setFont("helvetica");
     doc.setFontSize(22);
-    doc.setTextColor(0, 102, 204); // Couleur du titre
+    doc.setTextColor(128, 0, 128); // Couleur du titre
     doc.text("Reçu", 15, 30);
 
     // Informations sur le client
@@ -81,7 +81,7 @@ export async function POST(req) {
     // Ajouter le total
     const totalYPosition = tableStartY + rowHeight * (items.length + 2);
     doc.setFontSize(12);
-    doc.setTextColor(0, 102, 204); // Couleur du total
+    doc.setTextColor(128, 0, 128); // Couleur du total
     doc.text(`Total: ${total.toFixed(2)} CFA`, 12, totalYPosition + 10);
 
     //Ajouter une ligne sous le total
@@ -92,7 +92,7 @@ export async function POST(req) {
     doc.setFontSize(10);
     doc.setFont("helvetica", "italic");
     doc.setTextColor(150, 150, 150); // Gris clair pour le message
-    doc.text("Merci pour votre confiance!\ncakes by rk la meilleure !\n 00227 84 61 53 53", 75, totalYPosition + 25, { align: "center" });
+    doc.text("Biller : Logiciel en ligne de generation de recu \n contact:00227 88715276", 75, totalYPosition + 25, { align: "center" });
 
     // Ajouter la date et l'heure d'émission du reçu en bas à droite
     const date = new Date().toLocaleDateString('fr-FR'); // Format de date français
