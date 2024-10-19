@@ -19,10 +19,10 @@ export async function POST(req) {
     const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a5' });
 
     // Chemin absolu vers le logo
-    const logoPath = path.join(process.cwd(), 'app', 'images', 'kelly.jpeg');
+    //const logoPath = path.join(process.cwd(), 'app', 'images', 'kelly.jpeg');
 
     // Charger le logo en base64 depuis le disque
-    const logoBase64 = loadImageAsBase64(logoPath);
+    //const logoBase64 = loadImageAsBase64(logoPath);
 
     // Ajouter le logo en haut à droite
     //doc.addImage(logoBase64, 'PNG', 80, 10, 65, 40); // Ajuste la position et la taille du logo
