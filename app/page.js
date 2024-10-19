@@ -19,7 +19,7 @@ export default function Home() {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `Likita-pro recu ${customer}`;
+    a.download = `Tikita-pro recu ${customer}`;
     a.click();
   };
 
@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       <div className="form-container">
-        <h1>TIKITA PRO</h1>
+        <h1 >TIKITA PRO</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -93,7 +93,7 @@ export default function Home() {
 
       <footer>
         <p><strong>TIKITA PRO V1</strong></p>
-        <p>Créée avec ❤️ par <a href="#">Kounou Gilbert</a></p>
+        <p>Créée avec ❤️ par <a href="wa.me/88715276">Kounou Gilbert</a></p>
       </footer>
 
       <style jsx>{`
