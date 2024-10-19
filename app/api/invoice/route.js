@@ -5,10 +5,10 @@ import path from 'path';
 import { Buffer } from 'buffer';
 
 // Fonction pour convertir une image en base64 depuis le système de fichiers
-function loadImageAsBase64(filePath) {
+/*function loadImageAsBase64(filePath) {
   const image = fs.readFileSync(filePath);
   return `data:image/png;base64,${image.toString('base64')}`;
-}
+}*/
 
 export async function POST(req) {
   try {
