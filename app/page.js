@@ -95,7 +95,7 @@ export default function Home() {
         <p><strong>TIKITA PRO V1</strong></p>
         <p>Créée avec ❤️ par <a href="https://wa.me/22788715276" target="_blank">Kounou Gilbert</a></p>
         </footer>
-        <script src="https://feedyourback.com/tunnel.js" data-id='cm2gulvnr02hluwx12zf3vwtm' defer ></script>
+        <script src="https://feedyourback.com/tunnel.js" data-id='cm2hf1xnk02ikuwx1qyjef01w' defer ></script>
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
