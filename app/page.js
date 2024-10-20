@@ -62,7 +62,7 @@ export default function Home() {
               <input
                 type="number"
                 placeholder=" Quantite"
-                value={item.quantity}
+                value={item.quantity || ""}
                 onChange={(e) => {
                   const newItems = [...items];
                   newItems[index].quantity = e.target.value;
@@ -72,7 +72,7 @@ export default function Home() {
               <input
                 type="number"
                 placeholder=" prix"
-                value={item.price}
+                value={item.price || ""}
                 onChange={(e) => {
                   const newItems = [...items];
                   newItems[index].price = e.target.value;
