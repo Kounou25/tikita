@@ -93,7 +93,7 @@ export default function Home() {
 
       <footer>
         <p><strong>TIKITA PRO V1</strong></p>
-        <p>Créée avec ❤️ par <a href="https://wa.me/88715276" target="_blank">Kounou Gilberto</a></p>
+        <p>Créée avec ❤️ par <a href="https://wa.me/88715276" target="_blank">Kounou Gilbert</a></p>
         </footer>
 
       <style jsx>{`
