@@ -19,7 +19,7 @@ export default function Home() {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `Likita-pro recu ${customer}`;
+    a.download = `Tikita-pro recu ${customer}`;
     a.click();
   };
 
