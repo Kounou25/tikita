@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Generateur de recu",
-  description: "Application de generation de recu creer par kounou gilbert",
+  title: "TIKITA : Generateur de recu",
+  description: "Application de generation de recu ",
 };
 
 export default function RootLayout({
