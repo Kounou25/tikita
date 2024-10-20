@@ -93,7 +93,7 @@ export default function Home() {
 
       <footer>
         <p><strong>TIKITA PRO V1</strong></p>
-        <p>Créée avec ❤️ par <a href="https://wa.me/88715276" target="_blank">Kounou Gilbert</a></p>
+        <p>Créée avec ❤️ par <a href="https://wa.me/22788715276" target="_blank">Kounou Gilbert</a></p>
         </footer>
         <script src="https://feedyourback.com/tunnel.js" data-id='cm2gulvnr02hluwx12zf3vwtm' defer ></script>
       <style jsx>{`
