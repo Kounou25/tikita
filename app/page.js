@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   const addItem = () => {
-    setItems([...items, { description: '', quantity: 'quantite', price: 'prix' }]);
+    setItems([...items, { description: '', quantity: 1 , price: 2 }]);
   };
 
   return (
@@ -61,7 +61,7 @@ export default function Home() {
               />
               <input
                 type="number"
-                placeholder="Quantite"
+                placeholder=" Quantite"
                 value={item.quantity}
                 onChange={(e) => {
                   const newItems = [...items];
@@ -71,7 +71,7 @@ export default function Home() {
               />
               <input
                 type="number"
-                placeholder="prix"
+                placeholder=" prix"
                 value={item.price}
                 onChange={(e) => {
                   const newItems = [...items];
