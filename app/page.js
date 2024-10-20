@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       <div className="form-container">
-        <h1 >TIKITA PRO</h1>
+        <h1 >TIKITA PRO </h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
