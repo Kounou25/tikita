@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   const addItem = () => {
-    setItems([...items, { description: '', quantity: 1, price: 0 }]);
+    setItems([...items, { description: '', quantity: '', price: '' }]);
   };
 
   return (
